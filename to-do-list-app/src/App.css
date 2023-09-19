@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.App h1{
+  font-family:cursive;
+  font-weight: 900;
+  font-style: oblique;
+  font-size: xx-large;
+}
+
+.App input{
+  background-color: rgba(255, 255, 255, 0.685);
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-right: 2rem;
+  font-size: 20px;
+  border: 0.5px solid black;
+}
+.App button{
+  background-color: rgb(255, 191, 73);
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-right: 2rem;
+  font-size: 18px;
+}
+.App button:hover{
+  background-color: rgb(237, 178, 69);
+}
+.todoList{
+  padding: 0px 3rem;
+}
+.todoList ol{
+  border: 1px solid rgb(228, 183, 99);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  list-style-type: upper-roman;
+}
+.todoList ul ol{
+  display: flex;
+  font-size: 25px;
+  list-style: none;
+  border-bottom: 2px solid black;
+  margin-top: 2rem;
+  
+}
+.delBtn{
+  background-color: rgb(252, 36, 36) !important;
+  margin: 0 1rem 1rem 3rem;
+  padding: 0;
+  font-size: 20px;
+  width: 10%;
+}
