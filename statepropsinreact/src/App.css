@@ -1,13 +1,61 @@
-body {
+/* App.css */
+
+/* Style for the main container */
+.container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  margin-top: 100px;
+  padding: 20px;
 }
 
-div {
+/* Style for the search bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+/* Style for the input field in the search bar */
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+}
+
+/* Style for the checkbox in the search bar */
+.checkbox-label {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-top: 10px;
+}
+
+/* Style for the product table */
+.product-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style for the table header */
+.product-table th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Style for the table rows */
+.product-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for product category rows */
+.category-row th {
+  background-color: #66cdaa;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the red text */
+.red-text {
+  color: red;
 }

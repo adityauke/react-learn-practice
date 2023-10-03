@@ -1,18 +1,21 @@
 import { useState } from "react";
+import './App.css'
 
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
-    <div>
+    <div className="container">
       <SearchBar
+        className="search-bar"
         filterText={filterText}
         inStockOnly={inStockOnly}
         onFilterTextChange={setFilterText}
         onInStockOnlyChange={setInStockOnly}
       />
       <ProductTable
+        className="product-table"
         products={products}
         filterText={filterText}
         inStockOnly={inStockOnly}
@@ -23,7 +26,7 @@ function FilterableProductTable({ products }) {
 
 function ProductCategoryRow({ category }) {
   return (
-    <tr>
+    <tr className="category-row">
       <th colSpan="2">{category}</th>
     </tr>
   );
@@ -84,12 +87,13 @@ function SearchBar({filterText,inStockOnly,onFilterTextChange,onInStockOnlyChang
   return (
     <form>
       <input
+        className="search-input"
         type="text"
         value={filterText}
         placeholder="Search..."
         onChange={(e) => onFilterTextChange(e.target.value)}
       />
-      <label>
+      <label className="checkbox-label">
         <input
           type="checkbox"
           checked={inStockOnly}
